@@ -2,7 +2,7 @@ import requests
 import time
 import google.generativeai as genai
 import logging 
-
+from noDV import noDV
 base_url = 'https://portal.scscourt.org/api/case/validate/'
 
 HEADERS = {
@@ -31,7 +31,7 @@ restraining_order_keywords = {
 
 def extract_filter_data():
     for i in range(1, 4254):
-        case_number = f'23FL{str(i).zfill(6)}'
+        case_number = f'23DV{str(i).zfill(6)}'
         url = base_url + case_number
         response = requests.get(url, headers=HEADERS)
         
@@ -65,7 +65,7 @@ def extract_filter_data():
                         party1, party2 = parsed_data['caseParties'][0], parsed_data['caseParties'][1]
                     except Exception as e:
                         print(f"Failed to parse data for case {case_number}. Error: {e}")
-                        breakpoint()
+                        continue
                     
                     if party1['type'] == 'Petitioner':
                         petitioner_name = party1['firstName'] + '  ' + party1['lastName']
@@ -105,8 +105,8 @@ def extract_filter_data():
                         restraing_order_val = 'N'
                     # write to csv 
                     with open("cases.csv", "a") as f:
-                        f.write(f"{case_number},{petitioner_rep_val},{respondent_rep_val},{restraing_order_val},{n}\n")
-                    time.sleep(0.5)
+                        # if not noDV(data):
+                        f.write(f"{case_number},{petitioner_rep_val},{respondent_rep_val},{restraing_order_val}\n")
                 
             except Exception as e:
                     print(f"Error {e} for case {case_number}")

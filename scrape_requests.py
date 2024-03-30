@@ -33,11 +33,26 @@ for i in range(1, 2102):
             data = response.json()
             if data:   
                 parsed_data = data['data']
+                party1, party2 = parsed_data['caseParties'][0], parsed_data['caseParties'][1]
+                if party1['type'] == 'Petitioner':
+                    petitioner_name = party1['firstName'] + '  ' + party1['lastName']
+                    respondent_name = party2['firstName'] + '  ' + party2['lastName']
+                else:
+                    petitioner_name = party2['firstName'] + party2['lastName']
+                    respondent_name = party1['firstName'] + party1['lastName']
+                
                 case_number = parsed_data['caseNumber']
-                petitioner_rep = "Y" if parsed_data['caseParties'][0]['attorneys'] else "N"
-
-                # Determine if respondent is represented by attorney
-                respondent_rep = "Y" if parsed_data['caseParties'][1]['attorneys'] else "N" 
+                case_attornies = parsed_data['caseAttornies']
+                case_attorny1, case_attorny2 = case_attornies[0], case_attornies[1]
+                if case_attorny1['representing'] == petitioner_name:
+                    petitioner_rep = case_attorny1['attorneyName']
+                    respondent_rep = case_attorny2['attorneyName']
+                else:
+                    petitioner_rep = case_attorny2['attorneyName']
+                    respondent_rep = case_attorny1['attorneyName']
+          
+                petitioner_rep_val = 'Y' if case_attorny1 != '' else 'N'
+                respondent_rep_val = 'Y' if case_attorny2 != '' else 'N'
 
                 # write to csv 
                 with open("cases.csv", "a") as f:
@@ -48,5 +63,6 @@ for i in range(1, 2102):
             # Log the case number where exception occurred
             with open("exception_log.txt", "a") as f:
                 f.write(f"{case_number}\n")
+            continue
     else:
         print(f"Failed to validate case {case_number}. Status code: {response.status_code}")

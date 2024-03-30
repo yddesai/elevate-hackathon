@@ -1,0 +1,842 @@
+{
+  "data": {
+    "caseParties": [
+      {
+        "attorneys": [],
+        "casePartyId": "14123907",
+        "type": "Petitioner",
+        "firstName": "Vanessa ",
+        "middleName": "",
+        "lastName": "Arqued",
+        "nickName": null,
+        "businessName": null,
+        "fullName": "Vanessa  Arqued",
+        "isDefendant": false
+      },
+      {
+        "attorneys": [],
+        "casePartyId": "14123908",
+        "type": "Respondent",
+        "firstName": "Samuel ",
+        "middleName": "",
+        "lastName": "Soubeyran",
+        "nickName": null,
+        "businessName": null,
+        "fullName": "Samuel  Soubeyran",
+        "isDefendant": true
+      },
+      {
+        "attorneys": [],
+        "casePartyId": "14123909",
+        "type": "Minor",
+        "firstName": "Marin ",
+        "middleName": "",
+        "lastName": "Soubeyran ",
+        "nickName": null,
+        "businessName": null,
+        "fullName": "Marin  Soubeyran ",
+        "isDefendant": false
+      },
+      {
+        "attorneys": [],
+        "casePartyId": "14123910",
+        "type": "Minor",
+        "firstName": "Eric ",
+        "middleName": "",
+        "lastName": "Soubeyran ",
+        "nickName": null,
+        "businessName": null,
+        "fullName": "Eric  Soubeyran ",
+        "isDefendant": false
+      },
+      {
+        "attorneys": [],
+        "casePartyId": "14123911",
+        "type": "Minor",
+        "firstName": "Iris",
+        "middleName": "",
+        "lastName": "Soubeyran ",
+        "nickName": null,
+        "businessName": null,
+        "fullName": "Iris Soubeyran ",
+        "isDefendant": false
+      },
+      {
+        "attorneys": [],
+        "casePartyId": "14123912",
+        "type": "Minor",
+        "firstName": "Yvan",
+        "middleName": "",
+        "lastName": "Soubeyran ",
+        "nickName": null,
+        "businessName": null,
+        "fullName": "Yvan Soubeyran ",
+        "isDefendant": false
+      },
+      {
+        "attorneys": [],
+        "casePartyId": "14191064",
+        "type": "Other",
+        "firstName": "",
+        "middleName": "",
+        "lastName": "OFFICE OF PRETRIAL SERVICES",
+        "nickName": null,
+        "businessName": null,
+        "fullName": " OFFICE OF PRETRIAL SERVICES",
+        "isDefendant": false
+      }
+    ],
+    "caseAttornies": [
+      {
+        "firstName": "Mitchell",
+        "middleName": "Todd",
+        "lastName": "Ehrlich",
+        "representing": "Vanessa  Arqued",
+        "barNumber": "197535",
+        "isLead": true
+      },
+      {
+        "firstName": "Alistair",
+        "middleName": "",
+        "lastName": "Shaw",
+        "representing": "Vanessa  Arqued",
+        "barNumber": "316734",
+        "isLead": false
+      },
+      {
+        "firstName": "Steven",
+        "middleName": "K",
+        "lastName": "Yoda",
+        "representing": "Samuel  Soubeyran",
+        "barNumber": "237739",
+        "isLead": true
+      }
+    ],
+    "caseEvents": [
+      {
+        "eventId": "121091389",
+        "date": "3/26/2024",
+        "type": "JCC Statement",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "JCC/PMH Statement",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "121091390",
+        "date": "3/26/2024",
+        "type": "Proof of Service: Electronic",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "Proof of Service: Electronic",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "121063236",
+        "date": "3/22/2024",
+        "type": "JCC Statement",
+        "filedBy": "Samuel  Soubeyran, ",
+        "comment": "Post-Mediation Hearing Statement (Statements)",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "120928583",
+        "date": "3/15/2024",
+        "type": "Stipulation and Order Appointment of Pro Tem - No Fee",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "request for appointment of official reporter 4/3/24 hrg",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "119955247",
+        "date": "1/10/2024",
+        "type": "Stipulation & Order",
+        "filedBy": "Samuel  Soubeyran, ",
+        "comment": "Stipulation and Order re Vocational Examination (Orders)",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "119687728",
+        "date": "12/26/2023",
+        "type": "Order: Appointment Child Custody Assess/Eval",
+        "filedBy": "Samuel  Soubeyran, ",
+        "comment": "Order Appointing Child Custody Evaluator",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "119463831",
+        "date": "12/8/2023",
+        "type": "Referral Post Mediation Hearing",
+        "filedBy": "",
+        "comment": null,
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "119316831",
+        "date": "12/1/2023",
+        "type": "Stipulation & Order",
+        "filedBy": "",
+        "comment": "pending re: Resolution of DVRO, Visitation & Other Orders",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "119285542",
+        "date": "11/22/2023",
+        "type": "Order: Restraining Order After Hearing",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "Order: Restraining Order After Hearing",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "118855768",
+        "date": "10/23/2023",
+        "type": "Minute Order",
+        "filedBy": "",
+        "comment": null,
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "118851111",
+        "date": "10/23/2023",
+        "type": "Other",
+        "filedBy": "Samuel  Soubeyran, ",
+        "comment": "MOTION IN LIMINE TO EXCLUDE WITNESSES #5-24 ON PETITIONER VANESSA ARQUEDS WITNESS LIST",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "118853117",
+        "date": "10/20/2023",
+        "type": "Declaration",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "Declaration (Arqued)",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "118853118",
+        "date": "10/20/2023",
+        "type": "Declaration",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "Declaration (Moreno 1)",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "118853119",
+        "date": "10/20/2023",
+        "type": "Declaration",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "Declaration (Moreno 2)",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "118853120",
+        "date": "10/20/2023",
+        "type": "Declaration",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "Declaration (Cartier)",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "118853122",
+        "date": "10/20/2023",
+        "type": "Declaration",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "Declaration (Watson)",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "118853125",
+        "date": "10/20/2023",
+        "type": "Declaration",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "Declaration (Garcia)",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "118853126",
+        "date": "10/20/2023",
+        "type": "Declaration",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "Declaration (A. Legras)",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "118853127",
+        "date": "10/20/2023",
+        "type": "Declaration",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "Declaration (Alarcon)",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "118853128",
+        "date": "10/20/2023",
+        "type": "Declaration",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "Declaration (Rosas)",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "118853129",
+        "date": "10/20/2023",
+        "type": "Declaration",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "Declaration (Ayala)",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "118853348",
+        "date": "10/20/2023",
+        "type": "Declaration",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "Declaration (Miot)",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "118853350",
+        "date": "10/20/2023",
+        "type": "Declaration",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "Declaration (V. Arqued)",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "118853351",
+        "date": "10/20/2023",
+        "type": "Declaration",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "Declaration (M. Legras)",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "118853353",
+        "date": "10/20/2023",
+        "type": "Declaration",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "Declaration (Whaley)",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "118853354",
+        "date": "10/20/2023",
+        "type": "Declaration",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "Declaration (Utama)",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "118853355",
+        "date": "10/20/2023",
+        "type": "Declaration",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "Declaration (Kataria-Rennie)",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "118853357",
+        "date": "10/20/2023",
+        "type": "Declaration",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "Declaration (Hoffers)",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "118853358",
+        "date": "10/20/2023",
+        "type": "Declaration",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "Declaration (Joyce)",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "118853359",
+        "date": "10/20/2023",
+        "type": "Declaration",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "Declaration (Tornero)",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "118853360",
+        "date": "10/20/2023",
+        "type": "Declaration",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "Declaration (Chang)",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "118830653",
+        "date": "10/20/2023",
+        "type": "Proof of Service: Electronic",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "Proof of Service: Electronic",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "118832932",
+        "date": "10/20/2023",
+        "type": "Proof of Service: Electronic",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "Proof of Service: Electronic",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "118809269",
+        "date": "10/19/2023",
+        "type": "Proof of Service: Electronic",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "Proof of Service: Electronic",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "118809514",
+        "date": "10/19/2023",
+        "type": "Declaration",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "Update to the Court re DVRO Hearing",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "118872274",
+        "date": "10/19/2023",
+        "type": "Opposition/Objections",
+        "filedBy": "Samuel  Soubeyran, ",
+        "comment": "Evidentiary Objections and Motion to Strike Petitioner's Declaration ISO Request for DVRO (Objections)",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "118814344",
+        "date": "10/18/2023",
+        "type": "Notice",
+        "filedBy": "Samuel  Soubeyran, ",
+        "comment": "Notice of Lodging Transcript of Deposition of Vanessa Arqued (Comment)",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "118814345",
+        "date": "10/18/2023",
+        "type": "Notice",
+        "filedBy": "Samuel  Soubeyran, ",
+        "comment": "Notice of Lodging Video Exhibits (Comment)",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "118800777",
+        "date": "10/18/2023",
+        "type": "Response: Request for Domestic Violence Restraining Order",
+        "filedBy": "Samuel  Soubeyran, ",
+        "comment": "Response: Request for Domestic Violence Restraining Order (Orders)",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "118804578",
+        "date": "10/18/2023",
+        "type": "Declaration: Income and Expense",
+        "filedBy": "Samuel  Soubeyran, ",
+        "comment": null,
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "118763839",
+        "date": "10/17/2023",
+        "type": "Stipulation & Order",
+        "filedBy": "",
+        "comment": "Temporary Support and Attorney's Fees (Orders)",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "118702602",
+        "date": "10/12/2023",
+        "type": "Stipulation and Order Appointment of Pro Tem - No Fee",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "10/23/23",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "118702603",
+        "date": "10/12/2023",
+        "type": "Stipulation and Order Appointment of Pro Tem - No Fee",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "10/30/23",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "118658879",
+        "date": "10/6/2023",
+        "type": "Declaration: Service of Disclosure (Preliminary)",
+        "filedBy": "Samuel  Soubeyran, ",
+        "comment": "Declaration: Service of Disclosure (Preliminary) (Declarations)",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "118069395",
+        "date": "9/5/2023",
+        "type": "Proof of Service: Electronic",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "Proof of Service: Electronic",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "117965904",
+        "date": "8/28/2023",
+        "type": "Memorandum: Points and Authorities",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "Memorandum: Points and Authorities iso RFO re CS SS and Need Based Attorney Fees",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "118055841",
+        "date": "8/28/2023",
+        "type": "Request for Order: Other (Fee Applies)",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "CS/SS/AF",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "118055842",
+        "date": "8/28/2023",
+        "type": "Declaration",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "Declaration of ADS iso RFO re CS SS and Need Based Attorney Fees",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "117897250",
+        "date": "8/24/2023",
+        "type": "Declaration: Service of Disclosure (Preliminary)",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "Declaration: Service of Disclosure (Preliminary)",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "117661774",
+        "date": "8/8/2023",
+        "type": "Stipulation & Order",
+        "filedBy": "",
+        "comment": "- re: Visitation",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "117581733",
+        "date": "8/1/2023",
+        "type": "Proof of Service: Electronic",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "Proof of Service: Electronic",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "117647861",
+        "date": "8/1/2023",
+        "type": "Declaration: Income and Expense",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "Income and Expense Declaration",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "117464804",
+        "date": "7/25/2023",
+        "type": "Proof of Service",
+        "filedBy": "Samuel  Soubeyran, ",
+        "comment": "Proof of Electronic Service - Order on Request to Continue Hearing (DV-116) (Comment)",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "117574031",
+        "date": "7/24/2023",
+        "type": "Response: Dissolution",
+        "filedBy": "Samuel  Soubeyran, ",
+        "comment": "Response: Dissolution - $435.00 (Responses)",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "117574032",
+        "date": "7/24/2023",
+        "type": "Declaration: Under UCCJEA",
+        "filedBy": "Samuel  Soubeyran, ",
+        "comment": "Declaration Re: UCCJEA (Declarations)",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "117419401",
+        "date": "7/21/2023",
+        "type": "DV Continuance Before Hearing",
+        "filedBy": "",
+        "comment": "Granted",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "117250085",
+        "date": "7/11/2023",
+        "type": "Proof of Service: DVRO-CLETS",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "Proof of Service: DVRO-CLETS",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "117078873",
+        "date": "7/5/2023",
+        "type": "Subsequent Request: DVRO w/ Minor",
+        "filedBy": "Vanessa  Arqued, Samuel  Soubeyran, ",
+        "comment": "(P) partly granted/partly denied",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "117004987",
+        "date": "6/26/2023",
+        "type": "Proof of Service",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "Proof of Service",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "117005688",
+        "date": "6/26/2023",
+        "type": "Acknowledgement/Receipt",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "Acknowledgement/Receipt",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "116969407",
+        "date": "6/15/2023",
+        "type": "New Filed Case",
+        "filedBy": "",
+        "comment": null,
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "116969408",
+        "date": "6/15/2023",
+        "type": "Petition Filed",
+        "filedBy": "",
+        "comment": null,
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "116969409",
+        "date": "6/15/2023",
+        "type": "Declaration: Under UCCJEA",
+        "filedBy": "",
+        "comment": null,
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "116969410",
+        "date": "6/15/2023",
+        "type": "Summons: Issued/Filed",
+        "filedBy": "",
+        "comment": null,
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "116969434",
+        "date": "6/15/2023",
+        "type": "Petition: Dissolution w/minor",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "Petition: Dissolution",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "116969435",
+        "date": "6/15/2023",
+        "type": "Summons: Issued/Filed",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "Summons",
+        "documentId": "",
+        "documents": []
+      },
+      {
+        "eventId": "116969436",
+        "date": "6/15/2023",
+        "type": "Declaration: Under UCCJEA",
+        "filedBy": "Vanessa  Arqued, ",
+        "comment": "Declaration Re: UCCJEA",
+        "documentId": "",
+        "documents": []
+      }
+    ],
+    "caseHearings": [
+      {
+        "hearingId": "16009681",
+        "calendar": "Department 75",
+        "type": "Request for Order:  Domestic Violence",
+        "date": "10/23/2023",
+        "time": "9:00AM",
+        "hearingResult": "Matter Heard",
+        "documentId": "",
+        "interpreter": "",
+        "hearingFlag": "",
+        "documents": []
+      },
+      {
+        "hearingId": "16009681",
+        "calendar": "Department 75",
+        "type": "Request for Order:  Domestic Violence",
+        "date": "10/23/2023",
+        "time": "9:00AM",
+        "hearingResult": "Matter Heard",
+        "documentId": "",
+        "interpreter": "",
+        "hearingFlag": "",
+        "documents": []
+      },
+      {
+        "hearingId": "16009681",
+        "calendar": "Department 75",
+        "type": "Request for Order:  Domestic Violence",
+        "date": "10/23/2023",
+        "time": "9:00AM",
+        "hearingResult": "Matter Heard",
+        "documentId": "",
+        "interpreter": "",
+        "hearingFlag": "",
+        "documents": []
+      },
+      {
+        "hearingId": "16181493",
+        "calendar": "Department 75",
+        "type": "Post Mediation Hearing",
+        "date": "4/3/2024",
+        "time": "9:00AM",
+        "hearingResult": null,
+        "documentId": "",
+        "interpreter": "",
+        "hearingFlag": "",
+        "documents": []
+      },
+      {
+        "hearingId": "16181493",
+        "calendar": "Department 75",
+        "type": "Post Mediation Hearing",
+        "date": "4/3/2024",
+        "time": "9:00AM",
+        "hearingResult": null,
+        "documentId": "",
+        "interpreter": "",
+        "hearingFlag": "",
+        "documents": []
+      },
+      {
+        "hearingId": "16181493",
+        "calendar": "Department 75",
+        "type": "Post Mediation Hearing",
+        "date": "4/3/2024",
+        "time": "9:00AM",
+        "hearingResult": null,
+        "documentId": "",
+        "interpreter": "",
+        "hearingFlag": "",
+        "documents": []
+      }
+    ],
+    "caseOtherDocuments": [],
+    "caseCharges": [],
+    "caseFinancials": [],
+    "caseFinancialTransactions": [],
+    "caseArrestInfomation": [],
+    "casePartyDemographics": {
+      "race": null,
+      "sex": null,
+      "dateOfBirth": null,
+      "height": null,
+      "weight": null,
+      "hairColor": null,
+      "eyeColor": null
+    },
+    "casePartyAddress": {
+      "streetName": null,
+      "city": null,
+      "state": null,
+      "zip": null
+    },
+    "casePartyIdentification": [],
+    "caseDocuments": [],
+    "minuteOrders": [],
+    "caseFlags": [],
+    "partyInJailFlags": [],
+    "caseBonds": [],
+    "caseWarrants": [],
+    "caseCrossReferenceNumbers": [],
+    "relatedCases": [],
+    "id": "4760728",
+    "caseNumber": "23FL002101",
+    "style": "Vanessa  Arqued vs Samuel  Soubeyran",
+    "caseCategory": 2,
+    "type": "Dissolution w/ Minor",
+    "typeId": "FL10",
+    "fileDate": "6/15/2023",
+    "securityGroup": null,
+    "status": "Active",
+    "courtLocation": "Family",
+    "caseSubType": null,
+    "nodeId": 21328,
+    "permission": 0,
+    "isSecuredAccess": false,
+    "isCriminal": false
+  },
+  "result": 0,
+  "created": "2024-03-30T20:56:56.0407342Z",
+  "message": "Case number 4760728 was found"
+}

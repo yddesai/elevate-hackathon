@@ -1,7 +1,11 @@
 import requests
+import time
+import google.generativeai as genai
+import logging 
 
 base_url = 'https://portal.scscourt.org/api/case/validate/'
-headers = {
+
+HEADERS = {
     'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0',
     'Accept': 'application/json, text/plain, */*',
     'Accept-Language': 'en-US,en;q=0.5',
@@ -17,52 +21,104 @@ headers = {
     'TE': 'trailers'
 }
 
-for i in range(1, 2102):
-    case_number = f'23FL{str(i).zfill(6)}'
-    url = base_url + case_number
-    response = requests.get(url, headers=headers)
-    
-    if response.status_code == 200:
-        try:
+restraining_order_keywords = {
+    "Order: Restraining Order After Hearing",
+    "Order: ROAH",
+    "Restraining Order After Hearing",
+    "ROAH", 
+    "DV-130"
+}
+
+def extract_filter_data():
+    for i in range(1, 4254):
+        case_number = f'23FL{str(i).zfill(6)}'
+        url = base_url + case_number
+        response = requests.get(url, headers=HEADERS)
+        
+        if response.status_code == 200:
             print(f"Case {case_number} validated successfully.")
             # Do something with the response if needed
             data = response.json()
-            id_number = data['data'][0]['id']
+            
+            try:
+                id_number = data['data'][0]['id']
+            except IndexError as e:
+                msg = data["message"]
+                logging.warning(f"Error {msg}")
+                continue
             url = f"https://portal.scscourt.org/api/case/{id_number}"
-            response = requests.get(url, headers=headers)
-            data = response.json()
-            if data:   
-                parsed_data = data['data']
-                party1, party2 = parsed_data['caseParties'][0], parsed_data['caseParties'][1]
-                if party1['type'] == 'Petitioner':
-                    petitioner_name = party1['firstName'] + '  ' + party1['lastName']
-                    respondent_name = party2['firstName'] + '  ' + party2['lastName']
-                else:
-                    petitioner_name = party2['firstName'] + party2['lastName']
-                    respondent_name = party1['firstName'] + party1['lastName']
-                
-                case_number = parsed_data['caseNumber']
-                case_attornies = parsed_data['caseAttornies']
-                case_attorny1, case_attorny2 = case_attornies[0], case_attornies[1]
-                if case_attorny1['representing'] == petitioner_name:
-                    petitioner_rep = case_attorny1['attorneyName']
-                    respondent_rep = case_attorny2['attorneyName']
-                else:
-                    petitioner_rep = case_attorny2['attorneyName']
-                    respondent_rep = case_attorny1['attorneyName']
-          
-                petitioner_rep_val = 'Y' if case_attorny1 != '' else 'N'
-                respondent_rep_val = 'Y' if case_attorny2 != '' else 'N'
+            try:
+                response = requests.get(url, headers=HEADERS)
+                data = response.json()
+            except Exception as e:
+                print(f"Error {e} for case {case_number}")
+                continue
+            
+            # Check if the case is a restraining order case
+            try:
+                if data:   
+                    try:
+                        parsed_data = data['data']
+                    except KeyError as e:
+                        parsed_data = data  
+                    try:
+                        party1, party2 = parsed_data['caseParties'][0], parsed_data['caseParties'][1]
+                    except Exception as e:
+                        print(f"Failed to parse data for case {case_number}. Error: {e}")
+                        breakpoint()
+                    
+                    if party1['type'] == 'Petitioner':
+                        petitioner_name = party1['firstName'] + '  ' + party1['lastName']
+                        respondent_name = party2['firstName'] + '  ' + party2['lastName']
+                    else:
+                        petitioner_name = party2['firstName'] + party2['lastName']
+                        respondent_name = party1['firstName'] + party1['lastName']
 
-                # write to csv 
-                with open("cases.csv", "a") as f:
-                    f.write(f"{case_number},{petitioner_rep},{respondent_rep}\n")
-           
-        except Exception as e:
-            print(f"Failed to validate case {case_number}. Error: {e}")
-            # Log the case number where exception occurred
-            with open("exception_log.txt", "a") as f:
-                f.write(f"{case_number}\n")
-            continue
-    else:
-        print(f"Failed to validate case {case_number}. Status code: {response.status_code}")
+                    case_number = parsed_data['caseNumber']
+                    case_attornies = parsed_data['caseAttornies']
+                    print(case_attornies)
+                    if not case_attornies:
+                        case_attorny1, case_attorny2 = '', ''
+                        petitioner_rep, respondent_rep = '', ''
+                    elif len(case_attornies) == 1:
+                        case_attorny1 = case_attornies[0]
+                        case_attorny2 = ''
+                        petitioner_rep, respondent_rep = '', ''
+                    else:
+                        case_attorny1, case_attorny2 = case_attornies[0], case_attornies[1]
+                        if case_attorny1['representing'] == petitioner_name:
+                            petitioner_rep = case_attorny1['firstName'] + '  ' + case_attorny1['lastName']
+                            respondent_rep = case_attorny2['firstName'] + '  ' + case_attorny2['lastName']
+                        else:
+                            petitioner_rep = case_attorny2['firstName'] + case_attorny2['lastName']
+                            respondent_rep = case_attorny1['firstName'] + case_attorny1['lastName']
+                        
+                    petitioner_rep_val = 'Y' if case_attorny1 != '' else 'N'
+                    respondent_rep_val = 'Y' if case_attorny2 != '' else 'N'
+
+                    case_events = parsed_data['caseEvents']
+                    n = len(case_events)
+                    
+                    if is_restraining_order(case_events):
+                        restraing_order_val = 'Y'
+                    else:
+                        restraing_order_val = 'N'
+                    # write to csv 
+                    with open("cases.csv", "a") as f:
+                        f.write(f"{case_number},{petitioner_rep_val},{respondent_rep_val},{restraing_order_val},{n}\n")
+                    time.sleep(0.5)
+                
+            except Exception as e:
+                    print(f"Error {e} for case {case_number}")
+
+
+def is_restraining_order(events):
+    for event in events:
+        if event['type'] in restraining_order_keywords or event['comment'] in restraining_order_keywords:
+            return True 
+    return False
+
+# 23fl004253
+# 23dv001069
+if __name__ == "__main__":
+    extract_filter_data()

@@ -7,5 +7,5 @@ def noDV(json):     #json is full json file for a case
     return False    #return False to indicate there are no mentions of DV
     
     
-
+ # if not noDV(data):
 

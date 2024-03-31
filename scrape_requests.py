@@ -5,12 +5,14 @@ import logging
 from noDV import noDV
 base_url = 'https://portal.scscourt.org/api/case/validate/'
 
+bearer = os.environ['bearer_token']
+
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0',
     'Accept': 'application/json, text/plain, */*',
     'Accept-Language': 'en-US,en;q=0.5',
     'Accept-Encoding': 'gzip, deflate, br',
-    'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1bmlxdWVfbmFtZSI6IjY0NXN4eHVhbiIsInN1YiI6ImluZm9AZWxldmF0ZWNvbW11bml0eWNlbnRlci5vcmciLCJyb2xlIjpbIkFETUlOIiwiTm9uZSJdLCJlbWFpbCI6ImluZm9AZWxldmF0ZWNvbW11bml0eWNlbnRlci5vcmciLCJncm91cHNpZCI6IjY0NSIsImpwYXdyb2xlIjoiQURNSU4iLCJqcGF3dHlwZSI6Ik5vbmUiLCJwYXNzd29yZCI6IkZhbHNlIiwicG9saWN5IjoiRmFsc2UiLCJmZWF0dXJlcyI6IltdIiwiaXNzIjoibXNjb3VydHMiLCJhdWQiOiIwOTkxNTNjMjYyNTE0OWJjOGVjYjNlODVlMDNmMDAyMiIsImV4cCI6MTcxMTg0MTkzNSwibmJmIjoxNzExODIzOTM1fQ.OeHB1b9VkQNir6CUrfWvtA0j-hhBpE9TxY4p-4a-1F4',
+    f'Authorization': 'Bearer {bearer}',
     'Connection': 'keep-alive',
     'Referer': 'https://portal.scscourt.org/case/NDc2MDcyOA==',
     'Sec-Fetch-Dest': 'empty',
